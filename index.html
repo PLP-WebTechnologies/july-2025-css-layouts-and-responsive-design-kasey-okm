@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kasey Portfolio</title>
+  <meta name="description" content="Kasey Portfolio - Accessible, SEO-friendly personal web page with semantic HTML5 structure.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Kasey Portfolio</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#about-me" accesskey="a">About Me</a></li>
+        <li><a href="#education" accesskey="e">Educational Background</a></li>
+        <li><a href="#skills" accesskey="s">Skills</a></li>
+        <li><a href="#projects" accesskey="p">Projects</a></li>
+        <li><a href="#media" accesskey="m">Media</a></li>
+        <li><a href="#contact" accesskey="c">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section id="about-me" aria-labelledby="about-me-heading">
+      <h2 id="about-me-heading">About Me</h2>
+      <p>
+        Hi! I’m Kasey, a passionate web developer with a love for creating functional and beautiful web experiences.
+      </p>
+    </section>
+
+    <section id="education" aria-labelledby="education-heading">
+      <h2 id="education-heading">Educational Background</h2>
+      <p>
+        I have a strong foundation in computer science and web development, with coursework and hands-on experience in HTML, CSS, and JavaScript.
+      </p>
+      <p>
+        <a href="Kasey-CV.pdf" download="Kasey-CV.pdf">Download My CV</a>
+      </p>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <ul>
+        <li>HTML5 &amp; CSS3</li>
+        <li>JavaScript (ES6+)</li>
+        <li>Accessibility (a11y)</li>
+        <li>Responsive Design</li>
+        <li>Version Control (Git)</li>
+      </ul>
+      <h3>Languages</h3>
+      <ol>
+        <li>English (Fluent)</li>
+        <li>Spanish (Conversational)</li>
+      </ol>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+      <table>
+        <caption>Recent Projects</caption>
+        <thead>
+          <tr>
+            <th scope="col">Project</th>
+            <th scope="col">Year</th>
+            <th scope="col">Role</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Personal Portfolio Website</td>
+            <td>2025</td>
+            <td>Developer &amp; Designer</td>
+          </tr>
+          <tr>
+            <td>Responsive Blog Template</td>
+            <td>2024</td>
+            <td>Lead Developer</td>
+          </tr>
+          <tr>
+            <td>Accessibility Checker Tool</td>
+            <td>2024</td>
+            <td>Contributor</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="media" aria-labelledby="media-heading">
+      <h2 id="media-heading">Media</h2>
+      <figure>
+        <img src="img/my coding image.jpg" alt="Kasey smiling at a laptop" width="300" loading="lazy">
+        <figcaption>My workspace where I code and create.</figcaption>
+      </figure>
+      <figure>
+        <audio controls>
+          <source src="audio/Cobhams_Asuquo_-_One_Hit_Okay.NG.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <figcaption>Listen to my audio introduction.</figcaption>
+      </figure>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Me</h2>
+      <address>
+        Email: <a href="mailto:kasey@example.com">kasey@example.com</a><br>
+        Phone: <a href="tel:+1234567890">+1 (234) 567-890</a>
+      </address>
+      <form aria-label="Contact form" autocomplete="on">
+        <p>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required minlength="2" maxlength="40" placeholder="Your full name" autocomplete="name">
+          </p>
+          <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required placeholder="you@example.com" autocomplete="email">
+          </p>
+          <p>
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone" pattern="^\+?\d{10,15}$" placeholder="+1234567890" autocomplete="tel">
+          </p>
+
+          <p>
+            <label for="subject">Subject:</label><br>
+            <input type="text" id="subject" name="subject" required maxlength="60" placeholder="Subject of your message">
+          </p>
+          <p>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required minlength="10" maxlength="500" placeholder="Type your message here"></textarea>
+          </p>
+
+          <p>
+            <label for="contact-method">Preferred Contact Method:</label><br>
+            <select id="contact-method" name="contact-method" required>
+              <option value="">--Please choose an option--</option>
+              <option value="email">Email</option>
+              <option value="phone">Phone</option>
+            </select>
+          </p>
+          <p>
+            <label>Subscribe to newsletter:</label>
+            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+            <label for="newsletter">Yes, sign me up!</label>
+          </p>
+          <p>
+            <label>How did you find me?</label><br>
+            <input type="radio" id="find-search" name="find" value="search" required>
+            <label for="find-search">Search Engine</label>
+            <input type="radio" id="find-friend" name="find" value="friend">
+            <label for="find-friend">Friend</label>
+            <input type="radio" id="find-other" name="find" value="other">
+            <label for="find-other">Other</label>
+          </p>
+          <p>
+            <label for="referrer">Referrer Code:</label><br>
+            <input type="text" id="referrer" name="referrer" pattern="[A-Za-z0-9]{6}" placeholder="e.g. ABC123" readonly value="ABC123">
+          </p>
+    
+        <p>
+          <button type="submit">Send Message</button>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kasey Portfolio. All rights reserved.</p>
+  </footer>
+</body>
+</html>

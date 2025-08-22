@@ -1,0 +1,206 @@
+/* CSS Basics & Box Model Demonstration */
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f7fa;
+  color: #222;
+  padding: 24px;
+}
+
+/* Header */
+header {
+  background: #2d3e50;
+  color: #fff;
+  padding: 24px 16px;
+  border-radius: 8px;
+  margin-bottom: 32px;
+  border: 2px solid #1a2533;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+}
+
+nav a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+nav a:hover,
+nav a:focus {
+  background: #ffd700;
+  color: #2d3e50;
+}
+
+/* Main Sections */
+main section {
+  background: #fff;
+  margin-bottom: 28px;
+  padding: 24px 18px;
+  border-radius: 8px;
+  border: 2px solid #e0e0e0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+main h2 {
+  color: #2d3e50;
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+}
+
+main h3 {
+  color: #3a506b;
+  margin-top: 18px;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+ul, ol {
+  margin-left: 24px;
+  margin-bottom: 12px;
+}
+
+li {
+  margin-bottom: 4px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  background: #f9fafb;
+}
+
+caption {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+th, td {
+  border: 1px solid #b0b0b0;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+th {
+  background: #e0e7ef;
+}
+
+/* Media */
+figure {
+  margin: 0 0 16px 0;
+  padding: 12px;
+  background: #f0f4f8;
+  border: 1.5px solid #c0c8d0;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+figcaption {
+  font-size: 0.95em;
+  color: #555;
+  margin-top: 6px;
+}
+
+/* Form */
+form {
+  margin-top: 18px;
+  padding: 18px;
+  background: #f7faff;
+  border: 2px solid #b3c7e6;
+  border-radius: 8px;
+  max-width: 500px;
+}
+
+form p {
+  margin-bottom: 14px;
+}
+
+label {
+  font-weight: 500;
+  color: #2d3e50;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  width: 100%;
+  padding: 7px 10px;
+  margin-top: 4px;
+  border: 1.5px solid #b3c7e6;
+  border-radius: 4px;
+  font-size: 1em;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+input[readonly] {
+  background: #e9ecef;
+  color: #888;
+}
+
+button[type="submit"] {
+  background: #2d3e50;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button[type="submit"]:hover {
+  background: #ffd700;
+  color: #2d3e50;
+}
+
+/* Checkbox and radio */
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 6px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 32px;
+  padding: 14px 0;
+  color: #fff;
+  background: #2d3e50;
+  border-radius: 8px;
+  border: 2px solid #1a2533;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+  main section, form {
+    padding: 14px 6px;
+  }
+}
